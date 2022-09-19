@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left_side">
+
+            <!-- PROFILE -->
+            <div class="profile">
+                <div class="img_setting">
+                    <img src="img.jpg">
+                </div>
+                <h4>Adesh Baradwaj.B</h4>
+                <h5>Web Developer</h5>
+                <button class="btn" onclick="PDF();">Download PDF</button>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="left_items">
+                <h4 class="title">Contact Info</h4>
+                <ul>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-map"></i>
+                        </span>
+                        <span class="text">Chennai</span>
+                    </li>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-envelope"></i>
+                        </span>
+                        <span class="text">adesh2001pvt@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-phone"></i>
+                        </span>
+                        <span class="text">8939677334</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="left_items">
+                <h4 class="title">Education</h4>
+                <ul>
+                    <li>
+                        <h5 class="dates">2019 - 2023</h4>
+                        <h4 class="text">Bachelor of Engineering Degree in Computer Science</h5>
+                        <h4 class="text">Prince Shri Venkateshwara Padmavathy Engineering College</h5>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CERTIFICATINS -->
+            <div class="left_items">
+                <h4 class="title">Certificates</h4>
+                <ul>
+                    <li>
+                        <h5 class="dates">February, 2021</h5>
+                        <h4 class="text">CS50's Web Programming</h4>
+                        <h4 class="text">Udemy</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- LANGUAGES -->
+            <div class="left_items">
+                <h4 class="title">Languages</h4>
+                <ul class="languages">
+                    <li>
+                        <span class="text">Tamil</span>
+                        <div class="percent">
+                            <div style="width: 90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="text">English</span>
+                        <div class="percent">
+                            <div style="width: 75%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right_side">
+
+            <!-- SUMMARY -->
+            <div class="right_items">
+                <h3 class="title">Summary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis ullam blanditiis iste! Quos deserunt ipsa iusto. Ullam, ipsa minus a fugiat, obcaecati blanditiis magnam incidunt quisquam perspiciatis pariatur enim nihil hic quibusdam doloremque fugit consectetur. Similique atque repudiandae praesentium esse pariatur veritatis deleniti quos explicabo id, sequi rem perspiciatis?</p>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="right_items">
+                <h4 class="title">School Education</h4>
+
+                <div class="experience">
+                    <div class="time_line">
+                        <span class="time_point"></span>
+                        <span class="time_road"></span>
+                    </div>
+                    <div class="content">
+                        <div class="interval">
+                            <h5>2017</h5>
+                            <h5>SSC</h5>
+                        </div>
+                        <div class="description">
+                            <h4></h4>
+                            <p>Vyasa Vidhyalaya Matriculation Higher Secondary School</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="time_line">
+                        <span class="time_point"></span>
+                        <span class="time_road"></span>
+                    </div>
+                    <div class="content">
+                        <div class="interval">
+                            <h5>2019</h5>
+                            <h5>HSC</h5>
+                        </div>
+                        <div class="description">
+                            <h4></h4>
+                            <p>Vyasa Vidhyalaya Matriculation Higher Secondary School</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SKILLS -->
+            <div class="right_items">
+                <h4 class="title">Professional Skills</h4>
+                <div class="skills">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 98%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4>JavaScript</h4>
+                    <div class="percent">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOBBIES -->
+            <div class="right_items">
+                <h4 class="title">Hobbies</h4>
+                <ul class="hobby">
+                    <li><i class="bx bx-dish"></i> Cooking</li>
+                    <li><i class="bx bxs-plane-take-off"></i> Flying</li>
+                    <li><i class="bx bx-book"></i> Reading</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HTML2PDF SOURCE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CUSTOM JS -->
+    <script type="text/javascript">
+    
+        function PDF(){
+            const e = document.querySelector(".container");
+
+            // RESIZE
+            e.style.maxWidth = "700px";
+            
+            // OPTIONS
+            const opt = {
+                filename: 'resume.pdf',
+                image: {
+                    type: "jpg",
+                    quality: 0.99
+                },
+                margin: 0,
+                jsPDF: {
+                    unit: "pt",
+                    format: "letter",
+                    orientation: "portrait"
+                },
+                pagebreak: {
+                    mode: ["avoid-all", "css", "legacy"]
+                }
+            };
+            html2pdf().set(opt).from(e).save();
+
+            // RESIZE
+            setTimeout(() => {e.style.maxWidth = "1400px";}, 2000);
+        }
+
+    </script>
+    
+</body>
+</html>
