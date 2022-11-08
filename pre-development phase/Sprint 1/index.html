@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content=
+<meta charset="UTF-8">
+<title>Landing Page UI Design</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display-swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins' , sans-serif;
+    }
+    body
+    {
+        background: #6666FF;
+    }
+    header
+    {
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px;
+        z-index: 100;
+    }
+    header .logo img
+    {
+        max-width: 150px;
+    }
+    .navigation
+    {
+        display: flex;
+        padding-left: 700px;
+    }
+    .navigation li
+    {
+        List-style: none;
+        margin: 0 10px;
+        
+    }
+    .navigation li a
+    {
+        color: #FFFFFF;
+        text-decoration: underlined;
+        font-weight: 500;
+        Letter-spacing: 1px;
+    }
+    .navigation li:hover a
+    {
+        color: #808080;
+    }
+    .search
+    {
+        position: relative;
+        width: 300px;
+        height: 40px;
+    }
+    .search input
+    {
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 100%;
+        height: 100%;
+        color: rgb(1, 1, 1);
+        background: transparent;
+        border: 1px solid rgba(5, 5, 5, 0.5);
+        outline: none;
+        border-radius: 4px;
+        padding: 0 10px 0 45px;
+        background-image: blur(10px);
+    }
+    .search input ::placeholder
+    {
+        color:rgb(0, 0, 0)
+    }
+    .search .fa-search
+    {
+        position: absolute;
+        top: 50%;
+        Left: 10px;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        color: rgb(5, 5, 5);
+        border-right: 1px solid rgb(5, 5, 5);
+    }
+    .banner
+    {
+        background-image: "static\bg.jpg";
+        position: relative;
+        background-repeat:no-repeat ;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .bg{
+        position: absolute;
+        top: 0;
+        Left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    p{
+        color: #fff;
+    }
+
+    .content{
+            text-align: center;
+            padding: 2%;
+            border: solid none;
+
+        }
+    .content a{
+        color: #f2f2f2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        text-decoration: none;
+        background: #de0611;
+        padding: 5px;
+        border-radius: 10px;
+        }
+        .image22{
+            position: absolute;
+            left: 10%;
+            top:100%;
+            border: 1px solid darkgray;
+            box-shadow: 1px 2px 4px;
+        }
+        h6{
+            color:black;
+            position: absolute;
+            left: 20%;
+            bottom: 25%;
+            border:1px solid whitesmoke;
+            width: 200px;
+            font-size: 40px;
+            background-color:white;
+            font-weight: normal;
+            text-align: center;
+        }
+        .image22:hover{
+            box-shadow: 1px 3px 9px;
+        }
+        .image23{
+            position: absolute;
+            left: 40%;
+            top:100%;
+            border: 1px solid darkgray;
+            box-shadow: 1px 2px 4px;
+        }
+        .image23:hover{
+            box-shadow: 1px 3px 9px;
+        }
+        
+        .image24{
+            position: absolute;
+            left: 70%;
+            top:100%;
+            border: 1px solid darkgray;
+            box-shadow: 1px 2px 4px;
+        }
+        .image24:hover{
+            box-shadow: 1px 3px 9px;
+        }
+
+        .about{
+            margin-top: 20%;
+            margin-left: 2%;
+            width: 90%;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(15, 235, 255, 0.753);
+            background-color: 0 4px 8px 0 rgba(6, 98, 245, 0.943);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .cart,.chatbot{
+            margin: 2%;
+            width: 90%;
+            height: 300px;
+            box-shadow: 0 4px 8px 0 rgba(15, 235, 255, 0.753);
+            background-color: 0 4px 8px 0 rgba(6, 98, 245, 0.943);
+            transition: 0.3s;
+            padding: 1%;
+        }
+        .about:hover,.cart:hover,.chatbot:hover {
+            box-shadow: 0 8px 16px 0 #E8E8E8;
+            }
+
+        .left{
+          
+            width: 10%;
+            height: 100%;
+            float: left;
+            margin: 1%;
+            
+            
+            
+        }
+        .txt{
+           padding-top: 2%;
+            text-align: center;
+             
+          
+
+        }
+
+        @media(max-width:600px)
+        {
+            header
+            {
+                padding: 20px;
+            }
+        }
+</style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="static\logo.png" width="40spx" height="30px"></a>
+            <ul class="navigation">
+                <li><a href=""> Home </a></li>
+                <li><a href="#"> Shop </a></li>
+                <li><a href="/loginAdmin"> Admin </a></li>
+                <li><a href="/loginUser"> User </a></li>
+                <li><a href="#"> Contact </a></li>
+            </ul>
+    <div class="search">
+        <input type="text" placeholder=" Search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+
+    </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <div class="get"><h1><span style="color:#454545; ">SMART FASHION RECOMMENDER APPLICATION,</span></h1><br>
+                <a href="/home"  name="Get Started">Get Started &#8594;</a></div>
+           </div>
+        </div>
+    </div>
+    <section>
+            <div class="image22">
+        <img src="static\fashion3.jpg" alt="" height="300" width="300">
+        <h6>Womens</h6>
+    </div>
+    <div class="image23">
+        <img src="static\fashion4.jpg" alt="" height="300" width="300">
+        <h6>mens</h6>
+    </div>
+    <div class="image24">
+        <img src="static\fashion5.jpg" alt="" height="300" width="300">
+        <h6>Kids</h6>
+    </div>
+</section>
+
+
+    <div class="about">
+        <center><h2>ABOUT</h2></center>
+             
+                <div class="txt">
+                    <p><h3 style="color:#21cfe2;">Welcome to your online fashion runway.</h3>
+
+                        We understand how much you value fashion and how much you appreciate the ease of internet purchasing. The SFRA online shopping app ensures that you don't miss out on a fashionable shopping experience whether you're on the road. SFRA is always available to suit all of your style demands, whether you want to buy for apparel for men and women, shoes, accessories, or even the latest electronics and computer devices.
+                </p></div>
+      
+      </div>
+      <div class="cart">
+        <center><h2>RECOMMENDATION&numsp;SYSTEM</h2></center>
+             
+                <div class="txt">
+                    <p><h3 style="color:#21cfe2;">Your Favourite Items have arrived.</h3>
+
+                        In this case, we used a recommendation system to categorise the user's wardrobe and offer the best outfit for a specific occasion based on a recommendation algorithm. The proposed system exhibits its ability to analyse the user's wardrobe from photos, assess the kind and colour of the outfit, and then recommend the most appropriate outfit for the occasion depending on the user's present wardrobe.
+                </p></div>
+      
+      </div>
+      <div class="chatbot">
+        <center><h2>CHATBOT[Service]</h2></center>
+             
+
+                <div class="txt">
+                    <p><h3 style="color:#21cfe2;">Your Healer has arrived.</h3>
+
+                        Chatbots may also be used to collect visitor data, which can subsequently be utilised to enhance product recommendations. By having a deep grasp of client queries, requirements, and preferences, you can personalise product pages and improve customer loyalty and affinity. Chatbots may also notify consumers when an item is out of stock, provide acceptable alternatives based on their preferences, and provide an estimated delivery date for their order.
+                </p></div>
+      
+      </div>
+      <div class="devlopers"></div>
+</body>
+</html>
